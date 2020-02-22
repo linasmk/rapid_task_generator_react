@@ -1,0 +1,51 @@
+.big-button {
+  background: $zuccini-light;
+  border: none;
+  border-bottom: 0.6rem solid darken($zuccini-light, 10%);
+  width: 100%;
+  margin: 15px 0;
+  color: $white;
+  font-size: $m-size;
+  padding: 20px;
+  font-weight: bold;
+  &:focus {
+    outline: 3px solid darken($zuccini-light, 10%);
+  }
+}
+.big-button:disabled {
+  opacity: 0.5;
+}
+.button {
+  background: $zuccini-light;
+  border: none;
+  border-bottom: 0.6rem solid darken($zuccini-light, 10%);
+  font-weight: 500;
+  color: $white;
+  &:focus {
+    outline: 1px solid darken($zuccini-light, 10%);
+  }
+}
+.button--link {
+  background: none;
+  border: none;
+  color: lighten($yellow, 20%);
+  padding: 0;
+}
+/* ====== Media Queries ===== */
+@media screen and (min-width: 480px) {
+  .big-button {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .big-button {
+    margin: 25px 0;
+    font-size: $l-size;
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .big-button {
+    margin: 40px 0;
+  }
+}

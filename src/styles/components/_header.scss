@@ -1,0 +1,17 @@
+.header {
+  background: $zuccini-light;
+  margin-bottom: $xl-size;
+  padding: $m-size;
+  color: white;
+}
+.header__title {
+  font-size: $l-size;
+  margin: 0;
+  word-break: break-all;
+}
+.header__subtitle {
+  color: $yellow;
+  font-weight: 500;
+  font-size: $m-size;
+  margin: 0;
+}

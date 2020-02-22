@@ -1,0 +1,34 @@
+.add-option-error {
+  color: lighten($yellow, 20%);
+  font-style: italic;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+}
+.add-option {
+  display: flex;
+  flex-direction: column;
+  padding: $m-size;
+}
+.add-option__input {
+  flex-grow: 1;
+  background: $dark-blue;
+  margin: 0 0 4px 0;
+  color: $white;
+  border: none;
+  border-bottom: 0.6rem solid darken($dark-blue, 10%);
+  &:focus {
+    outline: none;
+    border-top: 1px solid darken($yellow, 10%);
+    border-left: 1px solid darken($yellow, 10%);
+    border-right: 1px solid darken($yellow, 10%);
+  }
+}
+/* ====== Media Queries ===== */
+@media screen and (min-width: 480px) {
+  .add-option {
+    flex-direction: row;
+  }
+  .add-option__input {
+    margin: 0 $m-size 0 0;
+  }
+}

@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $dark-blue;
+  font-family: Helvetica, Arial, sans-serif;
+}
+button {
+  cursor: pointer;
+  font-size: $xs-size;
+  padding: $xs-size;
+}
+input {
+  font-size: $xs-size;
+  padding: $xs-size;
+}
+button:disabled {
+  cursor: default;
+}
+p {
+  font-size: $xs-size;
+}
+
+/* ====== Media Queries ===== */
+@media screen and (min-width: 768px) {
+  button {
+    font-size: $s-size;
+    padding: $s-size;
+  }
+  input {
+    font-size: $s-size;
+    padding: $s-size;
+  }
+  p {
+    font-size: $s-size;
+  }
+}
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: $m-size;
+    padding: $m-size;
+  }
+  input {
+    font-size: $m-size;
+    padding: $m-size;
+  }
+  p {
+    font-size: $m-size;
+  }
+}
